@@ -1,0 +1,739 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Navigation bar */
+nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+label.logo {
+  color:#0B1E3F;
+  font-size: 3.3rem;
+  line-height: 80px;
+  margin-left: 5rem;
+  font-family:'League Spartan';
+  font-weight: bold;
+}
+label.logo1 {
+  color:#59C1BB;
+  font-size: 3.3rem;
+  line-height: 90px;
+  margin-left:0rem;
+  font-family:'League Spartan';
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 10px;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 8px;
+  font-family:Montserrat; 
+}
+nav a {
+  color:#344966;
+  font-size: 17px;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+nav ul li a.fa-location-dot {
+  position: absolute;
+  top: 31px;
+  right: 691px;
+  color: #36486b;
+  font-size: 1.0rem;
+}
+nav ul li a.fa-user{
+  position: absolute;
+  top: 31px;
+  right: 502px;
+  color: #36486b;
+  font-size: 1.0rem;
+}
+nav ul li a.fa-message{
+  position: absolute;
+  top: 31px;
+  right: 361px;
+  color: #36486b;
+  font-size: 1.0rem;
+} 
+nav .login,
+nav a:hover,
+nav ul li a:hover i{
+  border: 1px solid #EAF4F4;
+  border-radius: 18px;
+  font-size: 17px;
+  font-weight: bold;
+  background: #EAF4F4;
+  color: #59c1bb;
+  padding: 8px 14px;
+  transition: 0.1s;
+}
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* nav bar inside accounts*/
+.accounts ul {
+  display: none;
+  position: absolute;
+  background-color: #D9D9D9;
+  top: 55px;
+  left: 1050px; 
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.accounts.active ul {
+display: flex;
+}
+
+.accounts ul li {
+  width: 100%;
+  float: none;
+  position: relative;
+}
+
+.accounts ul a {
+  padding: 20px;
+  color: #0B1E3F;
+}
+
+.accounts ul a:hover {
+  color: #59c1bb;
+}
+
+a.additional{
+    position: absolute;
+    left: 1160px;
+    top: 70px;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'league spartan';
+    cursor: pointer;
+    color: gray;
+  }
+
+  h1.additional1{
+    position: absolute;
+    left: 1212px;
+    top: 70px;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'league spartan';
+    color: gray;
+  }
+
+  a.additional2{
+    position: absolute;
+    left: 1220px;
+    top: 70px;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'league spartan';
+    cursor: pointer;
+    color: gray;
+  }
+
+/****************************** MEDICINE CONTAINER ******************************/
+
+.medicines_container {
+  display: relative;
+  margin-bottom: 250px;
+}
+
+.box {
+  position: relative;
+  top: 7rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: right;
+  background: #f1f3f4;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+
+.medname{
+  position: absolute;
+  left: 100px;
+  top: 320px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.medpronun{
+  position: absolute;
+  left: 170px;
+  top: 370px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.medpricelb{
+  position: absolute;
+  left: 210px;
+  top: 400px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.medprice{
+  position: absolute;
+  left: 280px;
+  top: 400px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.medsidelb{
+  position: absolute;
+  left: 100px;
+  top: 420px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+.medside_container{
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 48%;
+}
+
+.medside_container .card2{
+  width: 300px;
+  height: 170px;
+  background: transparent;
+  padding: 20px 15px;
+  display: flex;
+  margin-top: 5%;
+  border-radius: 10px
+}
+
+.medstorelb{
+  position: absolute;
+  left: 100px;
+  top: 665px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.medstore_container {
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 58%;
+}
+
+.medstore_container .card2{
+  width: 300px;
+  height: 170px;
+  background: transparent;
+  padding: 20px 15px;
+  display: flex;
+  margin-top: 5%;
+  border-radius: 10px
+}
+
+.branches {
+  position: absolute;
+  left: 98px;
+  top: 800px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.branchPAL{
+  position: absolute;
+  left: 110px;
+  top: 820px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.stockPAL{
+  position: absolute;
+  left: 300px;
+  top: 820px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.branchSUA{
+  position: absolute;
+  left: 110px;
+  top: 840px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.stockSUA{
+  position: absolute;
+  left: 300px;
+  top: 840px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.branchTAM{
+  position: absolute;
+  left: 110px;
+  top: 860px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.stockTAM{
+  position: absolute;
+  left: 298px;
+  top: 860px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.branchTUB{
+  position: absolute;
+  left: 110px;
+  top: 880px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.stockTUB{
+  position: absolute;
+  left: 296px;
+  top: 880px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.branchBUR{
+  position: absolute;
+  left: 110px;
+  top: 900px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.stockBUR{
+  position: absolute;
+  left: 296px;
+  top: 900px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.branchFUE{
+  position: absolute;
+  left: 110px;
+  top: 920px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+
+.stockFUE{
+  position: absolute;
+  left: 296px;
+  top: 920px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'league spartan';
+}
+/*******************RIGHT-SIDE MED INFO*******************/
+.genname{
+  position: absolute;
+  left: 480px;
+  top: 30px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.genpronun{
+  position: absolute;
+  left: 485px;
+  top: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'league spartan';
+  
+}
+
+.drugcategory{
+  position: absolute;
+  left: 485px;
+  top: 140px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.meduse{
+  position: absolute;
+  left: 630px;
+  top: 175px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.medusage{
+  position: absolute;
+  left: 630px;
+  top: 415px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+/* design for the circle bullet */
+.circle-bullet-list {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: justify;
+  }
+  
+  .circle-bullet-list li::before {
+    content: "\2022"; /* Unicode character for bullet (•) */
+    color: #000; /* Customize bullet color if needed */
+    font-size: 15px; /* Customize bullet size if needed */
+    margin-right: 5px; /* Adjust spacing between bullet and text if needed */
+  }
+  
+
+.info_container {
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 13%;
+}
+
+.info_container .card {
+  width: 450px;
+  height: 170px;
+  background: white;
+  padding: 20px 15px;
+  display: flex;
+  box-shadow: 0.5px 10px #e6e6e6;
+  margin-top: 5%;
+  border-radius: 10px
+}
+
+.direction_container {
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 28%;
+}
+
+.direction_container .card{
+  width: 450px;
+  height: 170px;
+  background: white;
+  padding: 20px 15px;
+  display: flex;
+  box-shadow: 0.5px 10px #e6e6e6;
+  margin-top: 5%;
+  border-radius: 10px
+}
+
+.activeing{
+  position: absolute;
+  left: 480px;
+  top: 670px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.active_container {
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 58%;
+}
+
+.active_container .card2{
+  width: 450px;
+  height: 170px;
+  background: transparent;
+  padding: 20px 15px;
+  display: flex;
+  margin-top: 5%;
+  border-radius: 10px
+}
+
+.inactiveing{
+  position: absolute;
+  left: 480px;
+  top: 760px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'league spartan';
+}
+
+.inactive_container {
+  position: absolute;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 67%;
+}
+
+.inactive_container .card2{
+  width: 450px;
+  height: 170px;
+  background: transparent;
+  padding: 20px 15px;
+  display: flex;
+  margin-top: 5%;
+  border-radius: 10px
+}
+
+/****************************** MEDICINE IMAGES CONTAINER ******************************/
+
+.box img {
+  width: 45%;
+  height:300px;
+  object-fit: contain;
+}
+/****************************** MEDICINE EDIT BUTTONS ******************************/
+
+.btn {
+  /* display: inline-black; */
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 25px;
+  text-align: center;
+  transition: var(--transitions);
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+}
+
+/****************************** ADD & DELETE MEDICINE CONTAINER ******************************/
+
+.add_delete_container {
+  position: relative;
+  top: 110px;
+  overflow: hidden;
+  padding: 0px 30px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+/****************************** CRUD CONTAINER ******************************/
+
+.CRUD_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.CRUD_box {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: right;
+  /* background: #f1f3f4; */
+  /* padding: 10px; */
+  border-radius: 0.5rem;
+}
+
+/****************************** ADD & DELETE MEDICINE BUTTONS ******************************/
+
+.CRUD_button {
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: var(--transitions);
+  margin-bottom: 25px;
+}
+
+.CRUD_button:hover {
+  background-color: var(--text-color);
+}
+
+/* SEARCH BAR */
+.searchcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    background: rgb(94, 192, 184);
+    position: absolute;
+    top: 125px;
+    left: 1280px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.searchcon.active {
+    width: 300px;
+    left: 1020px; /* Adjust the left position based on your desired position */
+}
+/* ito yung mukha sa search icon sa loob ng circle */
+.searchcon .searchicon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure search icon is above search bar */
+}
+/* yung size and color ng search icon sa loob ng circle */
+.searchcon .searchicon .fa-search {
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+}
+/* how "search your medicine and small search icon inside the bar looks like */
+.searchcon .searchmedicine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: s0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.searchcon.active .searchmedicine {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchcon .searchmedicine form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    height: 100%;
+    padding: 0 10px;
+}
+/* design:search your medicine here */
+.searchcon .searchmedicine input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 14px; /* Adjust the font size based on your desired size */
+    outline: none;
+    text-indent: 10%;
+}
+
+.searchcon .searchmedicine button[type="submit"] {
+    border: none;
+    background:none;
+    cursor: pointer;
+    outline: none;
+}
+/* the search icon to the right sa expanded na */
+.searchcon .searchmedicine button[type="submit"] .fa-search {
+    font-size: 15px; /* Adjust the font size based on your desired size */
+    color: rgb(255, 255, 255);
+}
+/****************************** CATEGORIES CONTAINER ******************************/
+
+.categories_container {
+  position: relative;
+  top: 110px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 0px 30px;
+}
+
+.categories_left li {
+  margin-bottom: 8px;
+}
+
+.categories_left a {
+  color: var(--text-color);
+  transition: var(--transitions);
+}
+
+.categories_left a:hover {
+  color: var(--main-color);
+}
+
+/****************************** CATEGORY SEPARATOR ******************************/
+.categories_left hr.rounded {
+  border: none; /* Remove the default border */
+  border-top: 2px solid #59c1bb; /* Set the color and thickness of the line */
+  margin-top: 10px; /* Adjust the spacing above the line if needed */
+  margin-bottom: 20px; /* Adjust the spacing below the line if needed */
+}
+ 
