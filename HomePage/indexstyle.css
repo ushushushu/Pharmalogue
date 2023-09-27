@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/****************************** NAVIGATION BAR & MENU ******************************/
+/* Navigation bar */
+nav {
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    position: absolute;
+  }
+  
+label.logo {
+    color:#0B1E3F;
+    font-size: 3.3rem;
+    line-height: 80px;
+    margin-left: 5rem;
+    font-family:'League Spartan';
+    font-weight: bold;
+  }
+
+label.logo1 {
+    color:#59C1BB;
+    font-size: 3.3rem;
+    line-height: 90px;
+    margin-left:0rem;
+    font-family:'League Spartan';
+    font-weight: bold;
+  }
+  
+nav ul {
+    float: right;
+    margin-right: 10px;
+  }
+  
+nav li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+    font-family:Montserrat; 
+  }
+
+nav a {
+    color:#344966;
+    font-size: 17px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+  }
+
+nav ul li a.fa-location-dot {
+    position: absolute;
+    top: 31px;
+    right: 691px;
+    color: #36486b;
+    font-size: 1.0rem;
+  }
+
+nav ul li a.fa-user{
+    position: absolute;
+    top: 31px;
+    right: 502px;
+    color: #36486b;
+    font-size: 1.0rem;
+  }
+
+nav ul li a.fa-message{
+    position: absolute;
+    top: 31px;
+    right: 361px;
+    color: #36486b;
+    font-size: 1.0rem;
+  } 
+  
+nav .login,
+  
+nav a:hover,
+  nav ul li a:hover i{
+    border: 1px solid #EAF4F4;
+    border-radius: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    background: #EAF4F4;
+    color: #59c1bb;
+    padding: 8px 14px;
+    transition: 0.1s;
+  }
+
+  nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  /* nav bar inside accounts*/
+.accounts ul {
+      display: none;
+      position: absolute;
+      background-color: #D9D9D9;
+      top: 55px;
+      left: 1050px; 
+      border-radius: 10px;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+  
+.accounts.active ul {
+    display: flex;
+    }
+    
+  .accounts ul li {
+      width: 100%;
+      float: none;
+      position: relative;
+    }
+    
+  .accounts ul a {
+      padding: 20px;
+      color: #0B1E3F;
+    }
+    
+  .accounts ul a:hover {
+      color: #59c1bb;
+    }
+    
+.us-btn {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #3b3b3b;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji"
+    ,"Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.320, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-left: 55px;
+}
+
+.us-btn:disabled {
+    pointer-events: none;
+}
+
+.us-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.us-btn:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.tagline {
+    font-family: "League Spartan";
+    color:#022B3A ;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tagline2 {
+    font-family: "League Spartan";
+    color:#1B2A41;
+    font-size: 20px;
+    font-weight: 550;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+

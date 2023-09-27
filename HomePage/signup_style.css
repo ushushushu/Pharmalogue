@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --main-color: #59c1bb;
+  --text-color: #0b1e3f;
+  --bg-color: #ffffff;
+  --transitions: all 0.4s ease;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(120deg, var(--bg-color), var(--main-color));
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: var(--bg-color);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* exapands the entire box */
+.form .user-type-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* sets the style of the header */
+.user-type-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+/* expands the options selection */
+.form :where(.user-type-option, .user-type) {
+  height: 25px;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: center;
+  transform: translate(0, 10%);
+}
+
+/* pulls the options text near the circle inputs */
+.form .user-type {
+  column-gap: 5px;
+}
+
+/* sets color to the input circle */
+.user-type input {
+  accent-color: #39918c;
+}
+
+/* makes the cursor have pointed hands */
+.form :where(.user-type input, .user-type label) {
+  cursor: pointer;
+}
+
+/* sets the color of the options label */
+.user-type label {
+  color: #707070;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transitions);
+  background: var(--main-color);
+  border-radius: 6px;
+}
+.form button:hover {
+  background: var(--text-color);
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.user-type-option, .user-type) {
+    row-gap: 15px;
+  }
+}
+
+/* .form .small #password_match_error {
+	text-align: left;
+	color: red;
+	padding:6px;
+	position: absolute;
+	top: 32px;
+}
+
+.form .small #character_count {
+	text-align: left;
+	color: #ddd;
+	padding:6px;
+	position: absolute;
+	top: 32px;
+} */
+
+.invalid email,
+.invalid password,
+.invalid confirmPassword,
+.invalid contactNumber {
+  border-color: #d93025;
+}
+
+.input-box .error {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+}
+
+.invalid .error {
+  display: flex;
+}
+
+form .input-field {
+  position: relative;
+  height: 65px;
+  width: 100%;
+}
+
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.create-password .error {
+  align-items: flex-start;
+}
+
