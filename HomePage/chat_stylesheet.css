@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #59c1bb;
+    --text-color: #0b1e3f;
+    --bg-color: #ffffff;
+    --transitions: all 0.4s ease;
+}
+
+/**************************************** CONTAINER CHATBOX ****************************************/
+
+/* container.show .chatbox {
+    display: none;
+} */
+
+/* .container {
+
+} */
+
+/**************************************** IF SECTION ACTIVE ****************************************/
+
+section.active .show-chat {
+    display: none;
+}
+
+section.active .chatbox {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+section.active .close-chatbox-button {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/**************************************** CHATBOX WINDOW ****************************************/
+
+.chatbox {
+    position: absolute;
+    max-width: 330px;
+    width: 100%;
+    max-height: 420px;
+    height: 100%;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--bg-color);
+    bottom: 95px;
+    right: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transitions);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/**************************************** CHATBOX MESSAGES CONTAINER ****************************************/
+.chatbox-messages {
+    /* margin-top: 200px; */
+    max-width: 330px;
+    width: 100%;
+    
+    /* 353 max height w/ header, w/o footer */
+    /* 288 max height w/ header, w/ footer */
+    max-height: 308px;
+    height: 100%;
+    align-items: center;
+    /* background: var(--bg-color); */
+    /* background: orange; */
+    /* margin: 15px; */
+    overflow-y: auto;
+    box-shadow: inset 0rem 16px 16px -16px rgb(0 0 0 / 10%);
+    /* opacity: 0;
+    display: none; */
+}
+
+/**************************************** CHATBOX HEADER ****************************************/
+.chatbox-header {
+    background: var(--bg-color);
+    /* background: orange; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding: 15px 20px; */
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0rem 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+.chatbox-header h2 {
+    color: var(--text-color);
+    font-weight: 650;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.chatbox-header i {
+    font-style: normal;
+    color: var(--main-color);
+}
+
+/**************************************** POPUP BUTTON - OPEN ****************************************/
+
+.chatbox-popup-button {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.chatbox-popup-button button {
+    color: var(--main-color);
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.chatbox-popup-button button:hover {
+    color: var(--text-color);
+    transition: var(--transitions);
+}
+
+/**************************************** POPUP BUTTON - CLOSE ****************************************/
+
+.close-chatbox-button {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close-chatbox-button button {
+    color: var(--main-color);
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.close-chatbox-button button:hover {
+    color: var(--text-color);
+    transition: var(--transitions);
+}
+
+/**************************************** CHATBOX INDIV MESSAGES CONTAINER ****************************************/
+.chatbox-messages .chat {
+    margin: 13px 13px;
+}
+
+/**************************************** CHATBOX INDIV MESSAGES TEXT ****************************************/
+.chatbox-messages .chat p {
+    padding: 11px 16px;
+    word-wrap: break-word;
+}
+
+.chatbox-messages .outgoing {
+    display: flex;
+} 
+
+.outgoing .details {
+    margin-left: auto;
+    max-width: calc(100% - 50px);
+}
+
+.outgoing .details p {
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 18px 18px 0 18px;
+}
+
+.chatbox-messages .incoming {
+    display: flex;
+    /* align-items: flex-end; */
+} 
+
+.incoming .details {
+    margin-right: auto;
+    max-width: calc(100% - 50px);
+}
+
+.incoming .details p {
+    background: #f1f3f4;
+    color: var(--text-color);
+    border-radius: 18px 18px 18px 0;
+}
+
+/**************************************** FOOTER ****************************************/
+.chatbox-footer {
+    /* position: absolute; */
+    display: flex;
+    height: 65px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: var(--bg-color);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+    /* subject to change */
+    /* margin-top: 288px; */
+    /* background: red; */
+}
+
+.column {
+    display: flex;
+    column-gap: 5px;
+}
+
+/**************************************** KEYBOARD CONTAINER ****************************************/
+.text-box {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/**************************************** KEYBOARD CONTAINER TEXT ****************************************/
+.text-box input {
+    height: 45px;
+    width: 250px;
+    font-size: 16px;
+    padding: 0 13px;
+    background: #f1f3f4;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+}
+
+/**************************************** SEND MESSAGE BUTTON CONTAINER ****************************************/
+.send-message-box {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**************************************** SEND MESSAGE BUTTON ****************************************/
+.send-message-box button {
+    color: var(--main-color);
+    background: var(--bg-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.send-message-box button:hover {
+    color: var(--text-color);
+    transition: var(--transitions);
+}
