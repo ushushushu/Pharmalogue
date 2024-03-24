@@ -12,12 +12,12 @@
 ## Live Demo Site:
 https://ushushushu.github.io/Pharmalogue/
 
-# CCC151
-# HTML
-# CSS
-# Javascript
-# Php
-# My SQL
-# XAMPP
-# Visual Studio Code
+## CCC151
+## HTML
+## CSS
+## Javascript
+## Php
+## My SQL
+## XAMPP
+## Visual Studio Code
 Make sure to download the folders as it is for the exact output 
