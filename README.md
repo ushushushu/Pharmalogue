@@ -8,6 +8,10 @@
          (4) edit and update medicine information, and (5) display a map of the pharmacy’s branches. All the functions are expected to bring ease to the pharmacy’s end as well as to 
              promote collaboration between pharmacy staff.  Furthermore, the specific pharmacy in collaboration with this project is Botica Ycsobel pharmacy located in Iligan City 
              operating in seven (7) barangays in the city.
+
+## Live Demo Site:
+https://ushushushu.github.io/Pharmalogue/
+
 # CCC151
 # HTML
 # CSS
