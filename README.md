@@ -13,7 +13,7 @@
   - CSS
   - Javascript
   - PHP
-  - MySQL
+  - SQL
 ## Software Used
   - XAMPP
   - Visual Studio Code
