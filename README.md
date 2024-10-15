@@ -16,4 +16,5 @@
   - SQL
 ## Software Used
   - XAMPP
+  - phpMyAdmin
   - Visual Studio Code
